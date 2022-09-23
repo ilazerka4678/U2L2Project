@@ -32,6 +32,7 @@ public class Rectangle
         width = 50;
     }
 
+
    /* Below are the Rectangle class "instance methods": these are the "behaviors"
        that a Rectangle object can "do" (or have done to it). Some of these methods
        return a value (the type of the return value is listed to the right of "public"),
@@ -68,6 +69,12 @@ public class Rectangle
     {
         int area = width * length;
         return area;
+    }
+
+    public int calculatePerimeter()
+    {
+        int perimeter = (width*2) + (length*2);
+        return perimeter;
     }
 
     // Prints the Rectangle's dimensions
